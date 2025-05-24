@@ -23,7 +23,7 @@ This project demonstrates basic to advanced examples of Spring MVC applications.
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone git@github.com:shreyamahalle/spring-mvc-examples.git
    cd spring-mvc-examples
    ```
 
