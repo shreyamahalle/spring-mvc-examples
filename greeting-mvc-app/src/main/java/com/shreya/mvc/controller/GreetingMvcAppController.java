@@ -9,15 +9,20 @@ import java.time.LocalTime;
 @Controller
 public class GreetingMvcAppController {
 
+    @RequestMapping("/")
+    public String home() {
+        return "redirect:/welcome";  // redirect root to /welcome
+    }
+
     @RequestMapping("/welcome")
-    public String welcomePage() {
-        return "index"; // loads index.jsp from /WEB-INF/views/
+    public String welcome() {
+        return "welcome";  // returns /WEB-INF/views/welcome.jsp
     }
 
     @RequestMapping("/greeting")
-    public String showGreetingPage(Model model) {
+    public String greeting(Model model) {
         model.addAttribute("message", getGreetingMessage());
-        return "greeting"; // loads greeting.jsp from /WEB-INF/views/
+        return "greeting";
     }
 
     private String getGreetingMessage() {
