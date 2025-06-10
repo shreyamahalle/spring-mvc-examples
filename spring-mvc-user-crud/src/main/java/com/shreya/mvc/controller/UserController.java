@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class UserController {
+
     private UserRepository userRepo = new UserRepository();
 
     @GetMapping("/")
