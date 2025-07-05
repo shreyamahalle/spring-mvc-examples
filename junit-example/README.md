@@ -86,7 +86,6 @@ mvn test
 
 🧪 Supports test-driven development (TDD)
 
-
 ## 📌 Author
 Shreya Mahalle
 Java Developer | IntelliJ + Maven + JUnit Enthusiast
